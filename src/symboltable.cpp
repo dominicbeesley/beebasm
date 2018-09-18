@@ -329,7 +329,7 @@ void SymbolTable::Dump() const
 		const string&	symbolName = it->first;
 		const Symbol&	symbol = it->second;
 
-		if ( symbol.IsLabel() &&
+		if ( //symbol.IsLabel() &&
 			 symbolName.find_first_of( '@' ) == string::npos )
 		{
 			if ( !bFirst )

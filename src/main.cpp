@@ -294,6 +294,7 @@ int main( int argc, char* argv[] )
 
 	if ( bDumpSymbols && exitCode == EXIT_SUCCESS )
 	{
+		cout << "SYMBOLS = ";
 		SymbolTable::Instance().Dump();
 	}
 
